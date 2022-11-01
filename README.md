@@ -1,15 +1,20 @@
 # ISCI-DoS-Tools
+
 GUI proram DoS tools with python script <br>
 DoS attack with TCP Flooding method
 
 # How to install?
-``$ git clone https://github.com/RCode777/ISCI-DoS-Tools``
+
+`$ git clone https://github.com/RCode777/ISCI-DoS-Tools`
 <br>
-``$ cd ISCI-DoS-Tools``
+`$ cd ISCI-DoS-Tools`
 <br>
-``$ python3 gui.py``
+`$ pip install -r requirements.txt`
+<br>
+`$ python3 gui.py`
 
 ### Operating system tested
+
 <ul>
   <li>
     Kali Linux 2022
