@@ -1,12 +1,13 @@
-from PIL import ImageTk, Image  
+from PIL import ImageTk, Image
 from lib.function import *
 import customtkinter
 import tkinter
 
-customtkinter.set_appearance_mode("System") 
+customtkinter.set_appearance_mode("System")
 customtkinter.set_default_color_theme("dark-blue")
 
 app = customtkinter.CTk()
+app.iconbitmap("./assets/isci.ico")
 app.title("~ ISCI DoS Tools ~")
 center(app, 400, 600)
 
@@ -24,7 +25,8 @@ label1.place(x=150, y=5)
 TARGET = tkinter.StringVar()
 add_input(customtkinter, frame, "Target", TARGET)
 
-add_button(customtkinter, frame, "Lock Target", button_event=lambda:event_button_target(customtkinter, app, TARGET.get()))
+add_button(customtkinter, frame, "Lock Target",
+           button_event=lambda: event_button_target(customtkinter, app, TARGET.get()))
 
 PACKETS = tkinter.IntVar()
 add_input(customtkinter, frame, "Packets", PACKETS)
@@ -32,8 +34,10 @@ add_input(customtkinter, frame, "Packets", PACKETS)
 THREADS = tkinter.IntVar()
 add_input(customtkinter, frame, "Thread", THREADS)
 
-add_button(customtkinter, frame, "Start Attack", button_event=lambda:attack_thread(TARGET.get(), PACKETS.get(), THREADS.get()))
+add_button(customtkinter, frame, "Start Attack!", button_event=lambda: attack_thread(
+    TARGET.get(), PACKETS.get(), THREADS.get()))
 
-add_button(customtkinter, frame, "Stop Attack", button_event=lambda:stop(app))
+add_button(customtkinter, frame, "Stop Attack!",
+           button_event=lambda: stop(app))
 
 app.mainloop()

