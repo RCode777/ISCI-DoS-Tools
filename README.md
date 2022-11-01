@@ -26,3 +26,5 @@ DoS attack with TCP Flooding method
 
 # Screenshot
 ![Screenshot (33)](https://user-images.githubusercontent.com/92700881/199250095-4ef39427-dc19-47b7-af0c-3a64797c8de7.png)
+# Result
+![Screenshot (34)](https://user-images.githubusercontent.com/92700881/199251879-ab45024c-d67e-4998-b57d-851cd221483e.png)
