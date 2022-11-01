@@ -1,7 +1,7 @@
 # ISCI-DoS-Tools
-
+<img src="https://github.com/RCode777/ISCI-DoS-Tools/blob/main/assets/isci07.png?raw=true" width="100px">
 GUI proram DoS tools with python script <br>
-DoS attack with TCP Flooding method
+DoS attack with TCP Flooding method.
 
 # How to install?
 
