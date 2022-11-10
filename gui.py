@@ -7,7 +7,6 @@ customtkinter.set_appearance_mode("System")
 customtkinter.set_default_color_theme("dark-blue")
 
 app = customtkinter.CTk()
-app.iconbitmap("./assets/isci.ico")
 app.title("~ ISCI DoS Tools ~")
 center(app, 400, 600)
 
